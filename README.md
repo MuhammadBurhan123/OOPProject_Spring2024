@@ -38,8 +38,9 @@ java Main
 
 ## Contributors
 
-- John Doe
-- Jane Smith
+- Muhammad Burhan Arshad
+- Muhammad Basil Siddique
+- Raza Ali
 
 ## License
 
