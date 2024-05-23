@@ -38,8 +38,8 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `created_at`) VALUES
-(1, 'Admin', 34376490, 'admin@gmail.com', '2024-05-23 04:42:00');
+INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `password`, `created_at`) VALUES
+(1, 'Admin', 34376490, 'admin@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '2024-05-23 04:42:00');
 
 -- --------------------------------------------------------
 
