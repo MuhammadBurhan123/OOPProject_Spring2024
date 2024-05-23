@@ -31,6 +31,7 @@ CREATE TABLE `admins` (
   `name` varchar(255) NOT NULL,
   `phone` int(13) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -64,10 +65,10 @@ INSERT INTO `customers` (`id`, `name`, `phone`, `email`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `payment`
+-- Table structure for table `payments`
 --
 
-CREATE TABLE `payment` (
+CREATE TABLE `payments` (
   `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `invoice` varchar(255) NOT NULL,
   `customer_id` int(11) NOT NULL,
@@ -85,7 +86,8 @@ CREATE TABLE `services` (
   `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `description` text,
-  `price` decimal(10,2) NOT NULL
+  `price` decimal(10,2) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 COMMIT;
