@@ -169,7 +169,10 @@ public class Login extends javax.swing.JFrame {
                 if (PasswordHashing.verifyPassword(password, hashedPassword)) {
                     JOptionPane.showMessageDialog(this, "Login Successful.", "Success", JOptionPane.INFORMATION_MESSAGE);
 
-                    System.out.println("Login successful!");
+                    dispose();
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.setVisible(true);
+                        
                 } else {
                        JOptionPane.showMessageDialog(this, "Invalid Password.", "Warning", JOptionPane.ERROR_MESSAGE);
                 }
